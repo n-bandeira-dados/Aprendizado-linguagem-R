@@ -1,0 +1,12 @@
+alimentação <- c(-35, -20, -15, -40, -60)
+freelance <- c(0, 150, 0, 200, 50)
+dias <- c("segunda", "terça", "quarta", "quinta", "sexta")
+names(alimentação) <- dias
+names(freelance) <- dias
+saldo_diario <- alimentação + freelance
+print(saldo_diario)
+total_alimentação <- sum(alimentação)
+total_freelance <- sum(freelance)
+saldo_semana <- total_freelance + total_alimentação
+print(total_alimentação > total_freelance)
+print(saldo_semana > 0)
